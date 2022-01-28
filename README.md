@@ -26,3 +26,18 @@ python manage.py migrate
 python src/manage.py runserver 
 ```
 
+## Formatters and Checkers
+
+Using black code format tool
+``` 
+python -m black ./
+```
+Using flake8
+``` 
+flake8 ./
+```
+
+Using isort
+```
+isort ./
+```
