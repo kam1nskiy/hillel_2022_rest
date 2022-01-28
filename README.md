@@ -13,7 +13,7 @@ Install deps
 Setup environment
 ```bash 
 # Create virtual env
-pipenv isntall
+pipenv sync
 pipenv shell
 ```
 
@@ -23,6 +23,6 @@ Run Django Server
 python manage.py migrate
 
 # Run Server
-python manage.py runserver 
+python src/manage.py runserver 
 ```
 
