@@ -1,1 +1,14 @@
 .DS_Store
+
+
+# Editors /IDE
+.idea/
+.vscode/
+
+
+# Python
+__pycache__/
+
+# SQLite
+
+*sqlite*
