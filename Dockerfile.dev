@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR = /myapp
+WORKDIR /myapp
 COPY . .
 
 RUN  apt-get update \

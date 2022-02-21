@@ -4,7 +4,7 @@ from django.urls import include, path
 
 
 def check(request):
-    data = {"name": "Vova"}
+    data = {"nameee": "Vova"}
     # return HttpResponse('Hello')
     return JsonResponse(data)
 

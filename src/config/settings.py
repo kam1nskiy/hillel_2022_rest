@@ -12,9 +12,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from os import path,sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Add src folder to the PATH
+sys.path.append(path.join(BASE_DIR))
 
 
 # Quick-start development settings - unsuitable for production
@@ -110,6 +114,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
+
+DEBUG = os.getenv("DEBUG")
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALLOWED_HOSTS = os.environ.get('SERVERNAMES').split(' ')
+# ALLOWED_HOSTS = [ ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
